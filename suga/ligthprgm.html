@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><strong>
+        light the bulb
+    </strong></h1>
+    <p>
+        light the bulb with the button
+    </p>
+    <script>
+    function light(sw)
+    {
+        var pic;
+        if(sw==0)
+            {
+pic="pic_bulboff.gif";
+            }
+else{
+    pic="pic_bulbon.gif";
+}
+document.getElementById('Screenshot 2024-11-21 at 1.58.56PM.png').src = pic;
+    }
+        </script>
+        <img id="Screenshot 2024-11-21 at 1.58.56PM.png" src="pic_bulboff.gif" width="90" height="150">
+        <p>
+            <button type="button"onclick="light(1)">lights on</button>
+            <button type="button"onclick="light(0)">ligths off</button>
+        </p>
+</body>
+</html>
